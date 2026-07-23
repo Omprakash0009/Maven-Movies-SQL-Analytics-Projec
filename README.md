@@ -1,55 +1,66 @@
 # Maven Movies SQL Business Analysis
 
-## Project Overview
+## Overview
 
-This project showcases SQL-based business analysis performed on the Maven Movies DVD Rental database using MySQL. The database represents the operations of a DVD rental company and contains data related to customers, rentals, payments, films, inventory, stores, and staff.
+This project demonstrates end-to-end business analysis using SQL on the Maven Movies database, a relational database that simulates the operations of a DVD rental company.
 
-The objective of this project is to analyze business operations, answer real-world business questions, and generate meaningful insights using SQL. The project demonstrates practical SQL skills commonly required for Data Analyst roles.
+The project focuses on transforming raw transactional data into meaningful business insights by writing SQL queries that analyze customers, rentals, payments, inventory, films, stores, and staff performance.
+
+Throughout the project, I explored the complete database schema, developed analytical queries, and answered real-world business questions similar to those faced by business analysts and decision-makers.
 
 ---
 
 ## Business Scenario
 
-Maven Movies is a DVD rental company that wants to gain a better understanding of its day-to-day business operations.
+Maven Movies is a DVD rental business that requires data-driven insights to better understand its operations.
 
-As a Data Analyst, I was responsible for exploring the company's relational database and answering business questions related to customers, inventory, rentals, payments, staff performance, and store operations.
+As the Business/Data Analyst, my responsibility was to analyze the company's database and generate reports that help management answer questions related to:
 
-The analysis helps management understand customer behavior, monitor inventory, evaluate store performance, and support data-driven business decisions.
+- Customer behavior
+- Rental activity
+- Revenue generation
+- Inventory management
+- Store performance
+- Film portfolio
+- Staff operations
 
----
-
-## Project Objectives
-
-The primary objectives of this project are to:
-
-- Explore and understand a relational database
-- Analyze customer rental behavior
-- Evaluate inventory across stores
-- Monitor payment and revenue information
-- Generate operational reports
-- Understand relationships between database tables
-- Apply SQL techniques to solve business problems
+The analysis supports better operational and strategic decision-making using SQL.
 
 ---
 
-## Database Overview
+# Project Objectives
 
-The Maven Movies database consists of multiple related tables connected through primary and foreign keys.
+This project was completed with the following objectives:
 
-### Main Tables
+- Explore a relational SQL database
+- Understand relationships between multiple tables
+- Analyze business transactions using SQL
+- Write efficient analytical queries
+- Generate business reports
+- Summarize operational performance
+- Solve real-world business questions using SQL
+- Strengthen relational database querying skills
+
+---
+
+# Database Overview
+
+The Maven Movies database contains interconnected tables representing different business entities.
+
+## Core Tables
 
 | Table | Description |
 |--------|-------------|
 | customer | Customer information |
-| rental | Rental transaction records |
-| payment | Customer payment history |
-| inventory | Movie inventory available in stores |
-| film | Film details |
-| category | Film categories |
-| film_category | Relationship between films and categories |
+| rental | Rental transactions |
+| payment | Customer payments |
+| inventory | Inventory available in stores |
+| film | Movie details |
+| category | Movie categories |
+| film_category | Film-category mapping |
 | actor | Actor information |
-| film_actor | Relationship between actors and films |
-| staff | Store employees |
+| film_actor | Film-actor mapping |
+| staff | Employee information |
 | store | Store information |
 | address | Address details |
 | city | City information |
@@ -59,171 +70,258 @@ The Maven Movies database consists of multiple related tables connected through 
 
 ---
 
-## SQL Concepts Demonstrated
+# SQL Skills Demonstrated
 
-This project includes practical implementation of:
+## Data Retrieval
 
-- SELECT Statements
-- WHERE Clause
+- SELECT
 - DISTINCT
-- ORDER BY
+- Aliases
+- LIMIT
+
+## Data Filtering
+
+- WHERE
+- AND
+- OR
+- IN
+- LIKE
+- BETWEEN
+
+## Aggregations
+
+- COUNT()
+- SUM()
+- AVG()
+- MIN()
+- MAX()
+
+## Grouping
+
 - GROUP BY
 - HAVING
-- Aggregate Functions
-  - COUNT()
-  - SUM()
-  - AVG()
-  - MIN()
-  - MAX()
+- ORDER BY
+
+## Conditional Logic
+
 - CASE Statements
+- Conditional Aggregation
+
+## Table Relationships
+
 - INNER JOIN
 - LEFT JOIN
 - UNION
-- LIKE Operator
-- IN Operator
-- Conditional Aggregation
-- Aliases
-- Multi-table Joins
-- Business Reporting Queries
+
+## Analytical Reporting
+
+- Customer Analysis
+- Revenue Analysis
+- Inventory Analysis
+- Store Analysis
+- Film Analysis
+- Staff Analysis
 
 ---
 
-## Business Problems Solved
+# Business Analysis Performed
 
-### Staff Analysis
+## Customer Analysis
 
-- Retrieve employee details
-- Identify managers for each store
-- Display store information with complete address
+- Retrieved customer profiles
+- Identified active and inactive customers
+- Calculated customer rental frequency
+- Measured customer lifetime spending
+- Generated customer address reports
+- Ranked customers by total payments
 
-### Store Analysis
+---
 
-- Count inventory available in each store
-- Count active customers by store
-- Compare inventory between stores
+## Rental Analysis
 
-### Customer Analysis
+- Analyzed rental history
+- Calculated rentals per customer
+- Evaluated rental duration
+- Identified high-frequency renters
 
-- Active customer analysis
-- Customer rental history
-- Customer lifetime spending
-- Customer address reports
-- High-value customer identification
+---
 
-### Inventory Analysis
+## Payment Analysis
 
-- Store-wise inventory
-- Inventory grouped by movie rating
-- Inventory grouped by film category
+- Calculated average payment amount
+- Identified maximum payment processed
+- Summarized customer payments
+- Ranked customers by revenue contribution
+
+---
+
+## Inventory Analysis
+
+- Counted inventory available in each store
+- Compared inventory distribution across stores
+- Evaluated inventory by film rating
+- Analyzed inventory by film category
+- Calculated replacement costs
+
+---
+
+## Film Analysis
+
+- Explored film ratings
+- Categorized films using CASE statements
+- Evaluated rental pricing
+- Measured movie lengths
+- Analyzed replacement costs
+- Grouped films by rental duration
+
+---
+
+## Store & Staff Analysis
+
+- Listed store managers
+- Retrieved complete store addresses
+- Counted inventory by store
+- Counted active customers by store
+- Compared store-level inventory
+
+---
+
+## Actor & Category Analysis
+
+- Connected actors with films
+- Counted actors per film
+- Retrieved film categories
+- Evaluated award-winning actor coverage
+
+---
+
+## Business Reports Generated
+
+The project includes SQL reports covering:
+
+- Staff directory
+- Store inventory summary
+- Active customer reports
+- Customer spending reports
+- Rental history reports
+- Payment analysis
+- Film inventory reports
+- Film category analysis
 - Replacement cost analysis
-- Film availability across stores
-
-### Film Analysis
-
-- Film ratings
-- Rental duration analysis
-- Film categories
-- Replacement cost statistics
-- Rental pricing analysis
-
-### Revenue Analysis
-
-- Average payment amount
-- Maximum payment processed
-- Customer payment summaries
-- Total customer spending
-
-### Additional Business Reports
-
+- Store performance reports
+- Customer lifetime value reports
 - Advisor and investor directory
-- Award-winning actor coverage
-- Customer rental frequency
-- Film replacement cost summaries
+- Award-winning actor analysis
 
 ---
 
-## Sample Business Questions
+# Example Business Questions Solved
 
-Examples of business questions answered during this project include:
+Some of the analytical questions answered include:
 
-- How many inventory items are available in each store?
-- How many active customers does each store have?
+- How many inventory items are available at each store?
+- How many active customers belong to each store?
 - Which customers generate the highest revenue?
-- What is the average payment amount?
+- What is the average and maximum payment processed?
 - Which films have the highest replacement cost?
-- What inventory exists for each movie rating?
-- How many films belong to each category?
-- Who are the managers of each store?
-- What are the complete addresses of every store?
-- Which customers have rented the most movies?
+- How many movies belong to each rating?
+- Which inventory is available by category?
+- Who manages each store?
+- What are the complete store addresses?
+- Which customers rent the most movies?
 - What percentage of award-winning actors appear in available films?
 
 ---
 
-## Skills Demonstrated
+# SQL Techniques Applied
 
-- SQL Query Writing
-- Relational Database Analysis
 - Data Exploration
-- Data Aggregation
-- Business Analytics
-- Data Reporting
-- Data Interpretation
-- Problem Solving
-- Analytical Thinking
+- Exploratory Data Analysis (EDA)
+- Relational Database Analysis
+- Aggregate Analysis
+- Conditional Logic
+- Multi-table Joins
+- Business Reporting
+- Data Summarization
+- Sorting and Ranking
+- Pattern Matching
+- Customer Segmentation
 
 ---
 
-## Tools Used
+# Tools Used
 
 - MySQL
 - MySQL Workbench
+- Git
 - GitHub
 
 ---
 
-## Repository Structure
+# Repository Structure
 
 ```
-Maven-Movies-SQL-Analysis/
+Maven-Movies-SQL-Analysis
 │
-├── SQL Scripts/
-│   ├── Data Exploration.sql
-│   ├── Business Problems.sql
+├── SQL Scripts
+│   ├── Database Exploration.sql
+│   ├── Basic SQL Queries.sql
+│   ├── Filtering & Sorting.sql
 │   ├── Aggregate Functions.sql
-│   ├── Joins.sql
+│   ├── GROUP BY & HAVING.sql
 │   ├── CASE Statements.sql
-│   └── Final Business Analysis.sql
+│   ├── JOIN Operations.sql
+│   ├── UNION Queries.sql
+│   ├── Business Reports.sql
+│   └── Final Project.sql
 │
-├── Database Files/
+├── Database Files
 │
-├── Screenshots/
+├── Project Documentation
 │
 └── README.md
 ```
 
 ---
 
-## Key Learning Outcomes
+# Learning Outcomes
 
-Through this project, I gained practical experience in:
+Through this project, I developed practical experience in:
 
-- Working with relational databases
-- Writing optimized SQL queries
-- Performing business analysis using SQL
-- Combining data from multiple tables
-- Creating business reports
-- Applying aggregate functions for data analysis
-- Using joins to solve complex business questions
+- Writing SQL queries for business analysis
+- Exploring relational databases
+- Working with multiple related tables
+- Performing customer and revenue analysis
+- Creating business reports using SQL
+- Applying aggregate functions and joins
+- Using CASE statements for business logic
 - Translating business requirements into SQL solutions
 
 ---
 
-## Conclusion
+# Key Skills
 
-This project demonstrates how SQL can be used to analyze business operations and transform raw relational data into meaningful business insights.
+- SQL
+- MySQL
+- Relational Databases
+- Data Analysis
+- Business Intelligence
+- Data Exploration
+- Analytical Thinking
+- Query Optimization
+- Business Reporting
+- Data Aggregation
+- Data Visualization Preparation
 
-The analysis covers multiple functional areas including customer behavior, inventory management, revenue reporting, staff information, and store performance. It reflects practical SQL skills that are directly applicable to real-world Data Analyst roles.
+---
+
+# Conclusion
+
+This project demonstrates how SQL can be used to transform relational data into actionable business insights.
+
+By analyzing customer behavior, rental transactions, inventory, revenue, staff operations, and store performance, the project reflects the type of analytical work performed by Data Analysts in real business environments.
+
+The project strengthened my ability to work with relational databases, write analytical SQL queries, and solve business problems using structured data.
 
 ---
 
@@ -231,10 +329,12 @@ The analysis covers multiple functional areas including customer behavior, inven
 
 **Om Prakash**
 
-Data Analyst | SQL | Power BI | Excel
+Aspiring Data Analyst
 
-LinkedIn: https://www.linkedin.com/in/your-linkedin/
+### Skills
 
-GitHub: https://github.com/your-github
+SQL • Power BI • Excel • Data Analysis • Data Visualization • Business Intelligence
 
-Email: your-email@example.com
+- LinkedIn: https://linkedin.com/in/your-linkedin
+- GitHub: https://github.com/your-github
+- Email: your-email@example.com
