@@ -1,6 +1,6 @@
-# 🎬 Maven Movies SQL Business Analysis
+# Maven Movies SQL Business Analysis
 
-## 📌 Project Overview
+## Project Overview
 
 This project demonstrates how SQL can be used to analyze and understand the operations of a DVD rental business. Using the **Maven Movies** relational database, I explored business data to answer operational, customer, inventory, and management-related questions through SQL queries.
 
@@ -8,7 +8,7 @@ The project focuses on transforming raw transactional data into meaningful busin
 
 ---
 
-# 📖 Business Scenario
+# Business Scenario
 
 A new ownership team has acquired **Maven Movies**, a DVD rental company operating multiple physical stores.
 
@@ -28,7 +28,7 @@ The analysis covers:
 
 ---
 
-# 🎯 Project Objectives
+# Project Objectives
 
 The objective of this project is to use SQL to answer real-world business questions by analyzing relational data.
 
@@ -37,12 +37,12 @@ Main goals include:
 - Explore the complete Maven Movies database
 - Understand relationships between multiple database tables
 - Perform business-focused SQL analysis
-- Write optimized SQL queries using joins, aggregations, grouping and conditional logic
+- Write optimized SQL queries using joins, aggregations, grouping, and conditional logic
 - Convert raw business data into decision-making insights
 
 ---
 
-# 🗂 Database Information
+# Database Information
 
 The Maven Movies database contains multiple interconnected tables representing different parts of the business.
 
@@ -70,7 +70,7 @@ These tables are connected through primary and foreign keys to simulate a real-w
 
 ---
 
-# 🛠 SQL Concepts Used
+# SQL Concepts Used
 
 Throughout this project, the following SQL concepts were applied:
 
@@ -90,9 +90,7 @@ Throughout this project, the following SQL concepts were applied:
 
 ---
 
-# 📊 Business Questions & Insights
-
----
+# Business Questions & Insights
 
 ## 1. Store Managers & Store Locations
 
@@ -142,7 +140,7 @@ LEFT JOIN country
 
 ### Business Question
 
-Generate a detailed inventory list including store, inventory ID, film title, rating, rental price and replacement cost.
+Generate a detailed inventory list including store, inventory ID, film title, rating, rental price, and replacement cost.
 
 ### Tables Used
 
@@ -356,7 +354,7 @@ FROM advisor;
 
 ### Business Question
 
-Measure how well the business covers actors with one, two or three major awards.
+Measure how well the business covers actors with one, two, or three major awards.
 
 ### SQL Skills
 
@@ -395,7 +393,7 @@ END;
 
 ---
 
-# 🚀 Skills Demonstrated
+# Skills Demonstrated
 
 - SQL Query Writing
 - Relational Database Analysis
@@ -409,7 +407,7 @@ END;
 
 ---
 
-# 📌 Tools Used
+# Tools Used
 
 - MySQL
 - MySQL Workbench
@@ -418,7 +416,7 @@ END;
 
 ---
 
-# 📈 Learning Outcomes
+# Learning Outcomes
 
 Through this project, I strengthened my understanding of:
 
@@ -431,10 +429,10 @@ Through this project, I strengthened my understanding of:
 
 ---
 
-## ⭐ Repository Highlights
+# Repository Highlights
 
-✔ Business-focused SQL analysis  
-✔ 8 real-world analytical queries  
-✔ Multi-table joins and aggregations  
-✔ Practical reporting scenarios  
-✔ Beginner-friendly and recruiter-ready SQL project
+- Business-focused SQL analysis
+- 8 real-world analytical queries
+- Multi-table joins and aggregations
+- Practical reporting scenarios
+- Beginner-friendly and recruiter-ready SQL project
